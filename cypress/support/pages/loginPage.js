@@ -2,7 +2,9 @@ const campoUsername = 'form > div:nth-child(2) > div > div:nth-child(2) > input'
 
 const campoPassword = 'form > div:nth-child(3) > div > div:nth-child(2) > input'
 
-const btnLogin = 'form > div:nth-child(3) > div > div:nth-child(2) > input'
+const btnLogin = 'button[type="submit"]'
+
+const selector = ''
 
 
 
@@ -17,6 +19,10 @@ Cypress.Commands.add("preencherCampoPassword", (text)=>{
 
 Cypress.Commands.add("clicarBotaoLogin", ()=>{
     cy.clickElement(btnLogin)
+})
+
+Cypress.Commands.add("", (text) => {
+    cy.validatedText(selector)
 })
 
 
