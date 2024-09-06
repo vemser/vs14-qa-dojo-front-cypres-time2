@@ -12,7 +12,7 @@ const btnConfirmarDelecao = '#app > div.oxd-overlay.oxd-overlay--flex.oxd-overla
 
 const msgUsuarioInvalido = '#oxd-toaster_1';
 
-cons toster = '#oxd-toaster_1';
+const toster = '#oxd-toaster_1';
 
 Cypress.Commands.add("clicarBotaoAdmin", () => {
     cy.clickElement(btnAdmin);

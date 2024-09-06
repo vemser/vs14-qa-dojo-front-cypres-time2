@@ -12,9 +12,9 @@ describe("Admin", () => {
     cy.validacaoTextoBusca()
   });
   
-  it("BuscarUsuarioInexistente", () => {
+  it.only("BuscarUsuarioInexistente", () => {
     cy.clicarBotaoAdmin()
-    cy.preencherUserName()
+    cy.preencherUserNameInvalid()
     cy.clicarBtnSearch()
     cy.validacaoTextoUsuarioNaoEncontrado()
   });
