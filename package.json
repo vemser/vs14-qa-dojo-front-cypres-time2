@@ -1,0 +1,16 @@
+{
+  "name": "vs14-qa-dojo-front-cypres-time2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^9.0.0",
+    "cypress": "^13.14.2"
+  }
+}
