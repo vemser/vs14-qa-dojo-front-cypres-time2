@@ -4,5 +4,11 @@ describe("EsqueciSenha", () => {
     cy.preencherUserName();
     cy.clicarBotaoConfirmacao();
     cy.msgEsqueciSenha();
+  });  
+  
+  it("EsqueciMinhaSenhaUsernameVazio", () => {
+    cy.clicarBotaoEsqueciSenha();
+    cy.clicarBotaoConfirmacao();
+    cy.validateUsernameVazio();
   });
 });

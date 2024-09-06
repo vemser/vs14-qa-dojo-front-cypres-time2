@@ -3,7 +3,7 @@ Cypress.Commands.add("clickElement", (seletor, options = {})=>{
 })
 
 Cypress.Commands.add("sendText", (seletor, text) =>{
-    cy.get(seletor).focus().type(text)
+    cy.get(seletor).focus().clear().type(text)
 })
 
 Cypress.Commands.add("getTexto", (seletor)=>{
